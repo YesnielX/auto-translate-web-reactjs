@@ -1,0 +1,79 @@
+.main {
+  padding: 50px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+}
+
+.main > * {
+  margin: 5px;
+}
+
+.main .description > img {
+  margin: 10px;
+}
+
+.main .description .info button {
+  box-shadow: 0px 10px 14px -7px #0099ff;
+  background: linear-gradient(to bottom, #0099ff 5%, #0099ff 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  outline: none;
+  text-shadow: 0px 1px 0px #0099ff;
+  border: none;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.main .description .info button:hover {
+  background: linear-gradient(to bottom, #0099ff 5%, #28b1e2 100%);
+  background-color: #0099ff;
+}
+
+.main .description .info li {
+  display: inline-block;
+  margin: 10px;
+  list-style: none;
+}
+
+.main .description .info p {
+  max-width: 45em;
+}
+
+.main .description .info button a {
+  color: white;
+}
+
+.main .curve {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  max-width: 100%;
+  max-height: 100%;
+  transform: translate(5px, 6px);
+}
+
+
+@media (max-width: 990px) {
+  .main .description > img {
+    display: none;
+  }
+  .main .description .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main .curve {
+    display: none;
+  }
+}
